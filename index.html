@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="UTF-8" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
-    <meta
-      http-equiv="X-Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" /> -->
     <title>Hello from Electron renderer!</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
   </head>
+
   <body>
-    <h1>Hello from Electron renderer!</h1>
-    <p>👋</p>
-    <p id="info"></p>
+    <div id="container">
+      <nav id="navbar">
+        <h1>CloudPoint</h1>
+        <button id="close">X</button>
+      </nav>
+      <div class="app">
+        <div class="list-games">
+          <div class="card">
+            <img src="https://www.salesforce.com/content/dam/blogs/br/O%20que%20e%20Cloud%20Computing.png" alt="Denim Jeans" style="width:100%">
+            <span class="title">Jogo X</span>
+            <span class="sync">22/06/24</span>
+            <span class="sync">04/07/24</span>
+            <div class="actions">
+              <button>R</button>
+              <button>U</button>
+              <button>P</button>
+            </div>
+          </div>
+        </div>
+        <div class="options">
+          <button>
+            Add game
+          </button>
+          <button>
+            Send to cloud
+          </button>
+          <button>
+            Download from cloud
+          </button>
+          <button>
+            Login with Google
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="./renderer.js"></script>
+
 </html>
